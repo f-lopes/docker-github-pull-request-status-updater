@@ -1,0 +1,26 @@
+schemaVersion: "2.0.0"
+
+commandTests:
+
+  - name: "curl installation"
+    command: "which"
+    args: ["curl"]
+    expectedOutput: ["/usr/bin/curl"]
+
+  - name: "jq installation"
+    command: "which"
+    args: ["jq"]
+    expectedOutput: ["/usr/bin/jq"]
+
+fileExistenceTests:
+  - name: 'entrypoint script'
+    path: '/entrypoint.sh'
+    shouldExist: true
+    permissions: '-rwxr-xr-x'
+
+metadataTest:
+  env:
+    - key: GITHUB_API_BASE_URL
+      value: https://api.github.com/repos
+  workdir: ["/"]
+  entrypoint: ["./entrypoint.sh"]
