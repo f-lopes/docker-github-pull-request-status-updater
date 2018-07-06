@@ -5,9 +5,9 @@ set -ex
 echo "Retrieving latest container-structure-test binary...."
 echo
 
-curl -LO https://storage.googleapis.com/container-structure-test/latest/container-structure-test \
-	&& sudo cp container-structure-test /usr/local/bin \
-	&& sudo chmod +x /usr/local/bin/container-structure-test
+curl -LO https://storage.googleapis.com/container-structure-test/latest/container-structure-test-linux-amd64 \
+	&& chmod +x container-structure-test-linux-amd64 \
+	&& sudo mv container-structure-test-linux-amd64 /usr/local/bin/container-structure-test
 
 export PATH=$PATH:/usr/local/bin
 
