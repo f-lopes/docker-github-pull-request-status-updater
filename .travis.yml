@@ -1,4 +1,6 @@
 sudo: required
+dist: trusty
+
 script:
  - ./setup_tests.sh
  - ./tests.sh
