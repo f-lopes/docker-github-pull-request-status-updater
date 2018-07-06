@@ -1,3 +1,4 @@
+sudo: required
 script:
  - ./setup_tests.sh
  - ./tests.sh
