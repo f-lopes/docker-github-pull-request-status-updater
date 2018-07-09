@@ -8,6 +8,7 @@
 [![](https://img.shields.io/docker/pulls/flopes/docker-github-pull-request-status-updater.svg)](https://img.shields.io/docker/pulls/flopes/docker-github-pull-request-status-updater.svg)
 [![](https://img.shields.io/docker/stars/flopes/docker-github-pull-request-status-updater.svg)](https://img.shields.io/docker/stars/flopes/docker-github-pull-request-status-updater.svg)
 
+![GitHub - Pull request statuses](GitHub-PR-statuses.png)
 
 ## Usage 🐳
 
