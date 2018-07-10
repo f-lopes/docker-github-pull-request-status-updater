@@ -15,4 +15,4 @@ echo
 echo "Pulling GitHub pull request status updater Docker image...."
 echo
 
-docker pull flopes/docker-github-pull-request-status-updater
+docker build -t docker-github-pull-request-status-updater .
